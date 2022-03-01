@@ -23,7 +23,7 @@ function take_snapshot()
 classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/VK6X7UYHV/model.json',modelLoaded);
 
   function modelLoaded() {
-    console.log('Model Loaded!');
+    console.log('Modelo Carregado!');
   }
       
   function check()
@@ -54,7 +54,7 @@ function gotResult(error, results) {
 function speak(){
     var synth = window.speechSynthesis;
 
-    speak_data = "I am "+percent+" percent confident this object is a "+object;
+    speak_data = "Tenho "+percent+" de confiança que este objeto é um(a) "+object;
 
     var utterThis = new SpeechSynthesisUtterance(speak_data);
 
